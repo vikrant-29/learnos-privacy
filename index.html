@@ -32,118 +32,113 @@
 <body>
     <div class="container">
         <h1>Privacy Policy for Learn OS</h1>
-        
+
         <p><strong>Effective Date:</strong> May 7, 2025<br>
-        <strong>Last Updated:</strong> May 7, 2025</p>
+        <strong>Last Updated:</strong> July 25, 2026</p>
 
         <h2>1. Introduction</h2>
         <p>Welcome to Learn OS ("we," "our," or "us"). This privacy policy explains how our educational mobile application handles your information when you use our app.</p>
-        <p>Learn OS is an educational app designed to help students learn Operating System concepts. We are committed to protecting your privacy.</p>
+        <p>Learn OS is an offline educational app designed to help students learn Operating System concepts through lessons, quizzes, and reference PDFs. We are committed to protecting your privacy.</p>
 
         <h2>2. Information We Collect</h2>
-        
+
         <h3>2.1 Information You Provide</h3>
-        <p><strong>No personal information is collected</strong> - We do not require registration, email, or any personal details to use our app.</p>
-        
+        <p><strong>No personal information is collected.</strong> Learn OS does not require registration, an account, an email address, or any personal details to use the app. There is no login or sign-up of any kind.</p>
+
         <h3>2.2 Automatically Collected Information</h3>
+        <p>Learn OS itself does not run any analytics or tracking software and does not collect device information on its own. The only automatic data collection comes from the Google AdMob SDK, which we use to serve ads (see Section 4 below):</p>
         <ul>
-            <li><strong>Device Information</strong>: We may collect device model, OS version, and app version for analytics</li>
-            <li><strong>Usage Data</strong>: Lesson progress, quiz scores, and coin balance (stored locally on your device only)</li>
-            <li><strong>Advertising ID</strong>: Google AdMob may collect advertising ID to serve relevant ads</li>
+            <li><strong>Advertising ID and device signals</strong>: Collected by Google AdMob, not by Learn OS directly, in order to serve and measure ads.</li>
+            <li><strong>Usage Data</strong>: Your lesson progress, quiz scores, and coin balance are tracked by the app so it can show you where you left off — this data is stored <strong>only on your device</strong> and is never transmitted anywhere.</li>
         </ul>
-        
+
         <h3>2.3 Data Storage</h3>
         <ul>
-            <li>All your progress (lessons completed, quiz scores, coins) is stored <strong>locally on your device</strong> using SharedPreferences</li>
-            <li>We do not store any user data on our servers</li>
+            <li>All your progress (completed lessons, quiz scores, coin balance, theme preference) is stored <strong>locally on your device</strong> using Android's SharedPreferences.</li>
+            <li>Lessons, quizzes, images, and PDF reference material are bundled inside the app itself — nothing is downloaded from a server, and no separate content or media server is contacted.</li>
+            <li>We do not operate any backend server, and no user data is ever transmitted to or stored by us.</li>
         </ul>
 
         <h2>3. How We Use Your Information</h2>
-        <p>We use the collected information to:</p>
+        <p>Since we don't collect any personal information, there is very little for us to "use." The information that exists only on your device is used to:</p>
         <ul>
-            <li>Track your lesson progress within the app</li>
+            <li>Show your lesson and quiz progress within the app</li>
             <li>Award coins for completing lessons and quizzes</li>
-            <li>Display relevant advertisements</li>
-            <li>Improve app performance and user experience</li>
+            <li>Remember your display preferences (e.g., dark/light theme)</li>
+            <li>Display advertisements (via Google AdMob, see below)</li>
         </ul>
 
         <h2>4. Advertising</h2>
-        <p>We use <strong>Google AdMob</strong> to display advertisements in our app.</p>
-        
+        <p>We use <strong>Google AdMob</strong> to display advertisements in Learn OS. This is the only third-party service integrated into the app, and it is the only reason the app connects to the internet at all.</p>
+
         <h3>Ad Types Used:</h3>
         <ul>
-            <li><strong>Banner Ads</strong>: Displayed at the bottom of screens</li>
-            <li><strong>Interstitial Ads</strong>: Full-screen ads shown occasionally</li>
-            <li><strong>Rewarded Ads</strong>: Optional ads that users can watch to earn bonus coins</li>
+            <li><strong>Banner Ads</strong>: Small ads displayed within certain screens.</li>
+            <li><strong>Interstitial Ads</strong>: Occasional full-screen ads, shown only at natural break points such as completing a lesson, quiz, or unit — never on app launch or while you're actively reading.</li>
+            <li><strong>Native Ads</strong>: Ads styled to match the surrounding content.</li>
+            <li><strong>Rewarded Ads</strong>: Optional ads you can choose to watch in exchange for bonus in-app coins. These are never shown without your action, and coins are only granted after Google confirms the ad was watched.</li>
         </ul>
-        
+
         <h3>Google AdMob may collect:</h3>
         <ul>
-            <li>Device information (model, OS version)</li>
             <li>Advertising ID</li>
+            <li>Device information (model, OS version)</li>
             <li>IP address</li>
-            <li>App usage data</li>
+            <li>App interaction data related to ads (impressions, clicks)</li>
         </ul>
-        
-        <p>For more information, see Google's Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
-        
+        <p>Learn OS does not have access to, and does not separately collect or store, any of the information Google AdMob gathers to serve ads. For more information, see Google's Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+
         <h3>Opt-out of Personalized Ads:</h3>
-        <p>You can reset your advertising ID or opt out of personalized ads in your device settings:</p>
+        <p>You can reset your advertising ID or opt out of personalized ads at any time in your device settings:</p>
         <ul>
             <li><strong>Android</strong>: Settings → Google → Ads → Opt out of Ads Personalization</li>
         </ul>
 
         <h2>5. Third-Party Services</h2>
+        <p>Google AdMob is the only third-party service that receives any data from Learn OS. The table below lists it along with the general platform services every Android app relies on for distribution and updates — neither Google Play Services nor the Flutter framework itself collects data on our behalf.</p>
         <table>
             <tr>
                 <th>Service</th>
                 <th>Purpose</th>
+                <th>Data Involved</th>
                 <th>Privacy Policy</th>
             </tr>
             <tr>
                 <td>Google AdMob</td>
-                <td>Advertising</td>
+                <td>Displaying advertisements</td>
+                <td>Advertising ID, device info, IP address, ad interactions</td>
                 <td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></td>
             </tr>
             <tr>
                 <td>Google Play Services</td>
-                <td>App distribution</td>
+                <td>App distribution and updates</td>
+                <td>Standard Play Store install/update data (not collected by us)</td>
                 <td><a href="https://www.google.com/policies/privacy/" target="_blank">google.com/policies/privacy</a></td>
-            </tr>
-            <tr>
-                <td>Flutter Framework</td>
-                <td>App development</td>
-                <td><a href="https://flutter.dev/security" target="_blank">flutter.dev/security</a></td>
             </tr>
         </table>
 
         <h2>6. Children's Privacy</h2>
-        <p>Our app is suitable for all ages and does not:</p>
-        <ul>
-            <li>Require user registration</li>
-            <li>Collect personal information</li>
-            <li>Target children under 13 with personalized ads</li>
-        </ul>
-        <p>If you are a parent and believe your child has provided personal information, contact us immediately.</p>
+        <p>Learn OS does not require registration, does not collect personal information, and does not knowingly direct personalized advertising at children. That said, because the app's educational content may appeal to students of various ages, parents and guardians should be aware that the app displays Google AdMob advertisements, and Google's own collection practices described in Section 4 apply regardless of the user's age. If you are a parent or guardian with concerns about a child's use of the app, please contact us using the details in Section 10.</p>
 
         <h2>7. Data Security</h2>
-        <p>We take reasonable measures to protect your information:</p>
+        <p>Because almost no data leaves your device in the first place, there is very little to secure — but we still follow good practice:</p>
         <ul>
-            <li>All progress data is stored locally on your device</li>
-            <li>No data is transmitted to external servers (except for ads)</li>
-            <li>We do not share any user data with third parties (except as required for advertising)</li>
+            <li>All progress data is stored locally on your device only, using Android's standard app-sandboxed storage.</li>
+            <li>Learn OS does not transmit any data to servers we operate — we don't operate any.</li>
+            <li>The only outbound network activity is to Google's AdMob servers, solely to request and display ads.</li>
+            <li>We do not sell, rent, or share any user data with third parties beyond what's required for AdMob to function.</li>
         </ul>
 
         <h2>8. Your Rights</h2>
         <p>You have the right to:</p>
         <ul>
-            <li><strong>Reset your progress</strong>: Use the "Reset Progress" button in Settings</li>
-            <li><strong>Opt out of ads</strong>: Use device settings to limit ad tracking</li>
-            <li><strong>Uninstall the app</strong>: Deletes all locally stored data</li>
+            <li><strong>Reset your progress</strong>: Use the "Reset Progress" option in Settings to clear all locally stored lesson/quiz/coin data.</li>
+            <li><strong>Opt out of personalized ads</strong>: Use your device's ad settings to limit ad tracking, as described in Section 4.</li>
+            <li><strong>Delete all app data instantly</strong>: Uninstalling the app permanently deletes all locally stored data, since nothing is backed up to a server.</li>
         </ul>
 
         <h2>9. Changes to This Privacy Policy</h2>
-        <p>We may update this privacy policy from time to time. Changes will be posted on this page with an updated effective date.</p>
+        <p>We may update this privacy policy from time to time as the app changes. Any changes will be posted on this page with an updated "Last Updated" date above.</p>
 
         <h2>10. Contact Us</h2>
         <p>If you have questions about this privacy policy, contact us:</p>
@@ -160,7 +155,7 @@
 
         <div class="footer">
             <p><em>This privacy policy applies only to the Learn OS mobile application.</em></p>
-            <p>© 2025 Learn OS. All rights reserved.</p>
+            <p>© 2026 Learn OS. All rights reserved.</p>
         </div>
     </div>
 </body>
